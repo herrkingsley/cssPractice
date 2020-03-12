@@ -1,3 +1,5 @@
+/*should be EI 9 safe!*/
+
  /*
  font-family: 'Open Sans', sans-serif;
  font-family: 'Roboto', sans-serif;
@@ -31,6 +33,7 @@ nav a {
   text-decoration: none;
   font-size: 1.5em;
   text-transform: uppercase;
+  cursor: pointer;
 
 }
 
@@ -81,7 +84,7 @@ li {
     font-family: 'Roboto', sans-serif;
     color: gray;
     font-size: 1em;
-    padding: calc(50px - .5em) 10px;
+    padding: calc(50px - .5em) 10px; /*this whas the only way i found to vertically align the links while having a full area to click*/
 
 
 }
@@ -116,6 +119,7 @@ li {
   background-color: white;
   border: none;
   padding: 2px 10px;
+  cursor: pointer;
 
 }
 
