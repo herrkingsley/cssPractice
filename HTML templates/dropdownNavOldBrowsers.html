@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      * {
+  margin: 0;
+  padding: 0;
+  <!-- border: 1px solid red; -->
+}
+nav {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  position: relative;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: helvetica;
+}
+li {
+  list-style-type: none;
+/*   margin-left: 0; */
+}
+
+ul {
+  overlow: hidden;
+}
+
+.main-nav {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+}
+
+.main-nav > li{
+  display: inline-block;
+  overflow:
+}
+
+.main-nav > li a {
+  padding: 0 10px;
+}
+
+.main-nav:hover .drop-content  {
+  display:block;
+}
+
+.drop-content {
+  display: none; /*change to none when live*/
+  position: absolute;
+  background-color: gray;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.drop-content a{
+  margin: 5px 0;
+  display: inline-block;
+
+}
+
+
+    </style>
+
+  </head>
+  <body>
+    <nav>
+  <ul class="main-nav">
+    <li><a href="#">Home</a>
+          <ul class="drop-content">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2 with very long link text that is even longer</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact us</a></li>
+  </ul>
+</nav>
+
+  </body>
+</html>
