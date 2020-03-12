@@ -36,6 +36,7 @@ ul {
   position: absolute;
   top: 50%;
   transform: translatey(-50%);
+  margin: 0 30px;
 }
 
 .main-nav > li{
@@ -45,9 +46,10 @@ ul {
 
 .main-nav > li a {
   padding: 0 10px;
+
 }
 
-.main-nav:hover .drop-content  {
+.dropdown:hover .drop-content  {
   display:block;
 }
 
@@ -71,7 +73,7 @@ ul {
   <body>
     <nav>
   <ul class="main-nav">
-    <li><a href="#">Home</a>
+    <li class="dropdown"><a href="#">Home</a>
           <ul class="drop-content">
           <li><a href="#">Link 1</a></li>
           <li><a href="#">Link 2 with very long link text that is even longer</a></li>
