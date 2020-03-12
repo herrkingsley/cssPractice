@@ -6,62 +6,70 @@
 * {
   margin: 0;
   padding: 0;
+  /* border: 1px solid red; */
 }
 body {
   background-color: lightgray;
 }
 
 header {
-  height: 80px;
   width: 100%;
-  background-color: #fff;
-  position: fixed;
+  height: 100px;
+  background-color: white;
 }
-
 nav {
-  padding: 25px;
   margin: 0 auto;
   width: 80%;
   height: 100%;
+  /* background-color: white; */
+  position: relative;
 }
 
-nav a{
+nav a {
   text-decoration: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+
 }
 
-/*--------------LOGO-------------*/
-.logo{
-  display: inline-block;
-  height: 100%;
-  font-family: arial, sans-serif;
-  font-size: 1.5em;
-  font-weight: bold;
-  text-transform: uppercase;
+/*-------------LOGO------------------*/
+.logo {
+  position: absolute;
+  left: 2%;
+  top: 50%;
+ transform: translatey(-50%); auto;
+}
+.logo a {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bolder;
   color: black;
 }
 .logo span {
   color: lightgray;
 }
 
-/*-----------------MAIN NAVIGATION-------------*/
-.main-nav {
-  display: inline-block;
-}
-.main-nav li{
-  display: inherit;
-}
 
 
+/*-------------main nav--------------*/
 
-/*positions*/
-
-.fl_l {
-  float: left;
-}
-.fl_r {
-  float: right;
+.main-nav a {
+    font-family: 'Roboto', sans-serif;
 }
 
+.div2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.div3 {
+  position: absolute;
+  right: 2%;
+  top: 50%;
+ transform: translatey(-50%); auto;
+}
 
 
 
@@ -76,4 +84,11 @@ main {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 80px;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
