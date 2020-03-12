@@ -5,6 +5,7 @@
     <title>Simple fixed header with floats</title>
     <link rel="stylesheet" href="css/headerV2.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header>
@@ -12,13 +13,19 @@
     <div class="logo">
       <a href="#">Life<span>Coach</span></a>
     </div>
-    <div class="div2">
-      <a href="#">home</a>
-      <a href="#">about</a>
-      <a href="#">contact us</a>
-    </div>
-    <div class="div3">
-      <a href="#">search</a>
+    <ul class="main-nav">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">SERVICES</a></li>
+      <li><a href="#">STORIES</a></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+    <div class="nav-search">
+
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+
     </div>
   </nav>
 </header>
