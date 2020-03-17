@@ -1,0 +1,68 @@
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightgray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+p, a, li, ul {
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  padding-top: 1px; /*removes collapsing margins*/
+  background-color: #C3B299;
+
+}
+
+nav {}
+
+main {
+  padding-top: 1px; /*removes collapsing margins*/
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+}
+
+
+
+
+@media (min-width: 768px) {
+  main {
+  background-color: red;
+  }
+}
+
+
+
+/*
+smaller than or equal to 768 px (smartphones)
+larger than 768 px (small devices, tablets)
+larger than 992 px (medium devices)
+larger than 1200px (large devices)
+*/
