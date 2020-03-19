@@ -1,0 +1,167 @@
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightgray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  margin:0;
+}
+
+p, a, li, ul {
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  padding-top: 1px; /*removes collapsing margins*/
+  background-color: #A0EADE;
+
+}
+
+nav {
+  position: relative;
+}
+
+main {
+  padding-top: 1px; /*removes collapsing margins*/
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+}
+
+
+
+.wrapper-main-menu {
+  width: 90%;
+  position: absolute;
+
+  right: 0;
+  top: 0;
+text-align: right;
+
+}
+.burger-menu {
+  background-color: lightgray;
+  width: 100%;
+  display: inline-block;
+  color: black;
+  padding: 5px;
+}
+
+.burger-menu a:visited {
+  color: black;
+
+}
+
+.burger-menu span {
+    font-size: 2em;
+    font-weight: 900;
+    padding-right: 10px;
+
+}
+
+.burger-menu span::after {
+ content: "close";
+ visibility: visible;
+ opacity: 1;
+
+}
+
+.menu {
+  background-color: lightgray;
+  text-align: center;
+
+}
+
+.menu li a {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0;
+  border: 1px solid white;
+
+
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  color: gray;
+
+}
+
+.menu li a:hover {
+  background-color: white;
+}
+
+:target .menu{
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+
+/*
+
+.burger-menu span::after {
+  content: "menu";
+  visibility: hidden;
+  opacity: 1;
+}
+
+:target {
+  border: 2px solid #D4D4D4;
+  background-color: #white;
+}
+
+:target .burger-menu-close{
+  visibility:visible;
+  opacity: 0;
+}
+:target .burger-menu{
+  visibility: visible;
+  opacity: 1;
+} */
+
+/*-----------------media queries----------------*/
+
+@media (min-width: 768px) {
+  main {
+  background-color: red;
+  }
+
+
+.burger-menu span::after {
+  content: "menu";
+}
+
+
+} /*-------------END 768PX-----------------------*/
+
+/*
+smaller than or equal to 768 px (smartphones)
+larger than 768 px (small devices, tablets)
+larger than 992 px (medium devices)
+larger than 1200px (large devices)
+*/
