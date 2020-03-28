@@ -1,0 +1,219 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+
+
+header {
+
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("http://www.svede.se/wp-content/uploads/2012/03/Sanna_Svedestedt1-1024x435.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.mainHeader {
+  /* position: relative; */
+  padding: 20px 0;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-around;
+
+  /*
+  background-size: cover; */
+
+}
+
+/* .mainHeader::after {
+  content: "";
+  background: url("http://www.svede.se/wp-content/uploads/2012/03/Sanna_Svedestedt1-1024x435.jpg" );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+} */
+
+.logo {
+    /* margin-bottom: 20px; */
+    mix-blend-mode: multiply;
+}
+
+.mainNav{
+  display: flex;
+  width: 100%;
+
+}
+
+.burgerMenu {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.burgerMenu span {
+  font-size: 2.5em;
+    color: #505050;
+}
+
+.mainNav__ul {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+
+}
+
+.mainNav__li {
+  /* display: flex; */
+
+}
+
+.mainNav__link {
+  display: block;
+  padding: 5px 0;
+
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #545454;
+
+
+
+}
+
+.mainNav__link:hover {
+  color: #F6B65B;
+  background-color: #f7f7f7;
+}
+
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .mainNav__ul {
+  display: flex;
+}
+
+
+section img {
+  width: 100%;
+}
+
+.startHero {
+  display: none;
+}
+
+.card__link {
+  position: relative;
+  display: flex;
+}
+
+.card__desc {
+  position: absolute;
+  width: 100%;
+  padding: 1.5em 0;
+  text-align: center;
+  bottom: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, .5) 0%);
+
+  font-size: 1.4em;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.card__desc p {
+  padding: 0 .5em;
+}
+
+
+@media (min-width: 768px) {
+/* body {
+  background-color: coral;
+} */
+
+header {
+  background: none;
+}
+
+.mainNav {
+  width: 85%;
+  margin: 2em 0 .8em;; 
+}
+
+.burgerMenu {
+  display: none;
+}
+
+.mainNav__ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.mainNav__link {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+  section {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .startHero {
+    display:inherit;
+    padding: 0 10px;
+  }
+  .navCards {
+    display: flex;
+  }
+
+  .card {
+    flex: 1;
+    padding: 10px;
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+  /* body {
+    background-color: lightgreen;
+  } */
+  .mainNav {
+    width: 70%;
+    max-width: 1000px;
+  }
+
+
+  section {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1000px;
+  }
+}
